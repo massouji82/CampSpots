@@ -50,8 +50,14 @@ app.use('/', indexRoutes);
 app.use('/campgrounds',campgroundRoutes);
 app.use('/campgrounds/:id/comments', commentRoutes);
 
-app.listen('3000', function(){
-	console.log('YelpCamp is up!!!')
+// app.listen('3000', function(){
+// 	console.log('YelpCamp is up!!!')
+// });
+
+const port = process.env.PORT || 3000;
+const ip = process.env.IP;
+app.listen(port,function(){
+    console.log("Server has started .... at port "+ port+" ip: "+ip);
 });
 
 
