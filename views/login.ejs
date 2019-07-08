@@ -1,11 +1,14 @@
 <% include ./partials/header%>
 
-<h1>Login!</h1>
 
-<form action="/login" method="POST" autocomplete="off">
-	<input type="text" name="username" placeholder="username" autofocus>
-	<input type="password" name="password" placeholder="password">
-	<input type="submit" value="Login!">
-</form>
+<div class="input">
+	<h1>Login!</h1>
+
+	<form action="/login" method="POST" autocomplete="off">
+		<input type="text" name="username" placeholder="username" autofocus>
+		<input type="password" name="password" placeholder="password">
+		<input type="submit" value="Login!">
+	</form>
+</div>
 
 <% include ./partials/footer %>

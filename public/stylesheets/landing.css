@@ -3,7 +3,7 @@ body {
 }
 
 #landing-header {
-  z-index: 1;
+  z-index: 0.5;
   position: relative;
   text-align: center;
   padding-top: 40vh;
